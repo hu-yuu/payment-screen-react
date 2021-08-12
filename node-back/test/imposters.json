@@ -1,0 +1,195 @@
+
+
+
+{
+	"Açıklama": "İmposter oluşturmak için gereken POST verileri",
+	"İlki": "Şehirler",
+	"İkinci": "Ödeme",
+	"Üçüncü": "Ödeme CC",
+	"Dördüncü": "Ödeme Key Kontrol",
+	"Uygulama": "Mountebank"
+}
+
+{
+    "port": 4530,
+    "protocol": "http",
+    "stubs": [
+        {
+            "responses": [
+                {
+                    "is": {
+                        "statusCode": 200,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": [
+                            "Adana",
+                            "Adıyaman",
+                            "Afyon",
+                            "Ağrı",
+                            "Amasya",
+                            "Ankara",
+                            "Antalya",
+                            "Artvin",
+                            "Aydın",
+                            "Balıkesir",
+                            "Bilecik",
+                            "Bingöl",
+                            "Bitlis",
+                            "Bolu",
+                            "Burdur",
+                            "Bursa",
+                            "Çanakkale",
+                            "Çankırı",
+                            "Çorum",
+                            "Denizli",
+                            "Diyarbakır",
+                            "Edirne",
+                            "Elazığ",
+                            "Erzincan",
+                            "Erzurum",
+                            "Eskişehir",
+                            "Gaziantep",
+                            "Giresun",
+                            "Gümüşhane",
+                            "Hakkari",
+                            "Hatay",
+                            "Isparta",
+                            "Mersin",
+                            "İstanbul",
+                            "İzmir",
+                            "Kars",
+                            "Kastamonu",
+                            "Kayseri",
+                            "Kırklareli",
+                            "Kırşehir",
+                            "Kocaeli",
+                            "Konya",
+                            "Kütahya",
+                            "Malatya",
+                            "Manisa",
+                            "K.Maraş",
+                            "Mardin",
+                            "Muğla",
+                            "Muş",
+                            "Nevşehir",
+                            "Niğde",
+                            "Ordu",
+                            "Rize",
+                            "Sakarya",
+                            "Samsun",
+                            "Siirt",
+                            "Sinop",
+                            "Sivas",
+                            "Tekirdağ",
+                            "Tokat",
+                            "Trabzon",
+                            "Tunceli",
+                            "Şanlıurfa",
+                            "Uşak",
+                            "Van",
+                            "Yozgat",
+                            "Zonguldak",
+                            "Aksaray",
+                            "Bayburt",
+                            "Karaman",
+                            "Kırıkkale",
+                            "Batman",
+                            "Şırnak",
+                            "Bartın",
+                            "Ardahan",
+                            "Iğdır",
+                            "Yalova",
+                            "Karabük",
+                            "Kilis",
+                            "Osmaniye",
+                            "Düzce"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+{
+    "port": 4522,
+    "protocol": "http",
+    "stubs": [
+        {
+            "responses": [
+                {
+                    "is": {
+                        "statusCode": 200,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": 
+                            {
+                                "hesap" : 400
+                            } 
+                        }
+                    }
+                
+            ]
+        }
+    ]
+}
+
+
+{
+    "port": 4523,
+    "protocol": "http",
+    "stubs": [
+        {
+            "responses": [
+                {
+                    "is": {
+                        "statusCode": 200,
+                        "headers": {
+                            "Content-Type": "application/json"
+                        },
+                        "body": 
+                            {
+                                "limit" : 400,
+                                "borc" : 200
+                            } 
+                        }
+                    }
+                
+            ]
+        }
+    ]
+}
+
+{
+    "port": 9901,
+    "protocol": "http",
+    "stubs": [
+        {
+            "predicates": [
+                {
+                    "matches": {
+                        "query": {
+                            "kartno": "(\\b[0-9]{16}\\b)",
+                            "ad": "^[a-zA-Z]",
+                            "ay": "(\\b[0-9]{2}\\b|\\b[0-9]{1}\\b)",
+                            "yil": "(\\b[0-9]{4}\\b)",
+                            "cvv": "(\\b[0-9]{3}\\b)",
+                            "tutar": "(^\\d)",
+                            "tipi": "(\\b[0-9]{1}\\b)"
+                        }
+                    }
+                }
+            ],
+            "responses": [
+                {
+                    "is": {
+                        "body": "Done"
+                    }
+                }
+            ]
+        }
+    ]
+}

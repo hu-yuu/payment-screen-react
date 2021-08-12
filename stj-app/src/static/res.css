@@ -1,0 +1,184 @@
+
+
+  .one-margin {
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+
+  .invalid-border {
+    border-color: red !important;
+  }
+
+  #empty {
+    border:none !important;
+  }
+
+  table {
+    width: 90%;
+    background-color: #f0eeee;
+  }
+
+  td {
+    padding-left: 10px;
+  }
+
+
+  #pills-tab {
+    border-color: rgb(158, 205, 248) !important;
+
+  }
+
+  @media (min-width: 1200px) {
+    .custom-container{
+        width:800px;
+    }}
+
+
+  .width-c1 {
+    width: 250px;
+  }
+
+  .pills-color {
+    background-color: white !important;
+    
+}
+ 
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0d6efd;
+  }
+
+  #root {
+    background-color:rgb(158, 205, 248) !important;
+    height: 100% !important;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  @media (max-width: 480px){
+    .m-xs {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    .m-table {
+      margin-left: 50px !important
+    }
+  }
+
+  .first-tab-margin {
+    margin-left: 170px !important
+  }
+
+  .textFocused:focus {
+    border-style: solid;
+    border-color: rgb(62, 143, 197) !important;
+  }
+
+  #cvvdiv {
+    margin-left: 60px;
+  }
+
+  #tabContent {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(158, 205, 248) !important;
+  }
+
+  #odebttn {
+    margin-left: 250px;
+  }
+
+  .full-page-container {
+    height: 600px;
+    background-color: #818181;
+  }
+
+  .text-warning {
+    color: red;
+    visibility: visible !important;
+  }
+
+  .sub-btn-margin {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+
+  .radio-label {
+    margin-left: 20px !important;
+  }
+
+  .main-bc {
+    height: 100%;
+    background-color: rgb(211, 226, 171);
+  }
+
+  .div-article {
+      padding-left: 150px;
+  }
+
+  .st-header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #0d6efd;
+    color:white;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 52px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  #bilgiKart {
+    margin-left: 100px;
+  }
+
+
+  #fiskod {
+    width: 370px;
+    height: 30px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .navbar-custom {
+    background-color: #0d6efd;
+  }
+
+  .navbar-custom .navbar-text {
+    color: #818181;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
